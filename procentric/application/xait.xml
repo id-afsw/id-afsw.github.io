@@ -19,7 +19,7 @@
                     <version>0</version>
                 </applicationDescriptor>
                 <HcapDescriptor>
-                    <url>https://procentric.lge.com:14005/procentric/application/browserware/index.html</url>
+                    <url>http://procentric.lge.com:4005/procentric/application/browserware/index.html</url>
                     <applicationStructure>
                         <baseDirectory>/</baseDirectory>
                         <classpathExtension>/</classpathExtension>
