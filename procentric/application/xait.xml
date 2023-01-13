@@ -1,0 +1,32 @@
+<XAIT>
+    <versionNumber>0</versionNumber>
+    <AbstractService>
+        <svcName>HCAP HTML Test</svcName>
+        <svcId>0x1211</svcId>
+        <isAutoSelect>true</isAutoSelect>
+        <ApplicationList>
+            <Application>
+                <appName>00_hcap_html_api_test</appName>
+                <applicationIdentifier>
+                    <orgId>999</orgId>
+                    <appId>999</appId>
+                </applicationIdentifier>
+                <applicationDescriptor>
+                    <type>Hcap-h</type>
+                    <controlCode>AUTOSTART</controlCode>
+                    <visibility>NOT_VISIBLE_USERS</visibility>
+                    <priority>0</priority>
+                    <version>0</version>
+                </applicationDescriptor>
+                <HcapDescriptor>
+                    <url>http://procentric.lge.com:4000/procentric/application/browserware/index.html</url>
+                    <applicationStructure>
+                        <baseDirectory>/</baseDirectory>
+                        <classpathExtension>/</classpathExtension>
+                        <initialClass>index.html</initialClass>
+                    </applicationStructure>
+                </HcapDescriptor>
+            </Application>
+        </ApplicationList>
+    </AbstractService>
+</XAIT>
