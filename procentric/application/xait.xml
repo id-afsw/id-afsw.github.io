@@ -1,5 +1,5 @@
 <XAIT>
-    <versionNumber>0</versionNumber>
+    <versionNumber>999</versionNumber>
     <AbstractService>
         <svcName>HCAP HTML Test</svcName>
         <svcId>0x1211</svcId>
@@ -16,7 +16,7 @@
                     <controlCode>AUTOSTART</controlCode>
                     <visibility>NOT_VISIBLE_USERS</visibility>
                     <priority>0</priority>
-                    <version>0</version>
+                    <version>999</version>
                 </applicationDescriptor>
                 <HcapDescriptor>
                     <url>http://procentric.lge.com:4000/procentric/application/browserware/index.html</url>
