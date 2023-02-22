@@ -1,14 +1,14 @@
 <service>
      <setup>
-          <versionNumber>216</versionNumber>
-       <modelName>55LX761H-ZA</modelName>
+          <versionNumber>999</versionNumber>
+          <modelName>43UM767H0LC</modelName>
           <priority>NORMAL</priority>
           <content>
-               <type>INSTALLER_MENU</type>
-               <data>xxLX761H_ZA_1.tll</data>
-               <frequency>0</frequency>
-               <programNum>0</programNum>
-               <cTag>0</cTag>
-          </content>
+            <type>SPALSH_IMAGE</type>
+            <data>splash_Image.jpg</data>
+            <frequency>0</frequency>
+            <programNum>0</programNum>
+            <cTag>0<cTag>
+        </content>
      </setup>
 </service>
