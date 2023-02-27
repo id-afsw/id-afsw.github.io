@@ -8,8 +8,8 @@
             <Application>
                 <appName>00_hcap_html_api_test</appName>
                 <applicationIdentifier>
-                    <orgId>1</orgId>
-                    <appId>1</appId>
+                    <orgId>999</orgId>
+                    <appId>999</appId>
                 </applicationIdentifier>
                 <applicationDescriptor>
                     <type>Hcap-h</type>
@@ -19,7 +19,7 @@
                     <version>0</version>
                 </applicationDescriptor>
                 <HcapDescriptor>
-                    <url>http://procentric.lge.com:4000/procentric/application/browserware/index.html</url>
+                    <url>https://procentric.lge.com:14005/pbt/main/index.html</url>
                     <applicationStructure>
                         <baseDirectory>/</baseDirectory>
                         <classpathExtension>/</classpathExtension>
