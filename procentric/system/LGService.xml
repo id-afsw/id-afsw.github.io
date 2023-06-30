@@ -1,14 +1,98 @@
 <service>
      <setup>
-          <versionNumber>999</versionNumber>
-          <modelName>43UM767H0LC</modelName>
+          <versionNumber>1</versionNumber>
+          <modelName>WEBOS</modelName>
           <priority>NORMAL</priority>
           <content>
-            <type>SPALSH_IMAGE</type>
-            <data>splash_Image.jpg</data>
-            <frequency>0</frequency>
-            <programNum>0</programNum>
-            <cTag>0<cTag>
-        </content>
+          	<type>SPLASH_IMAGE</type>
+          	<subversionNumber>1</subversionNumber>
+          	<data>a_IMG_1811.JPG</data>
+          	<frequency>2</frequency>
+          	<programNum>1</programNum>
+          	<cTag>1</cTag>
+          </content>
+          <appList>
+          	<subversionNumber>1</subversionNumber>
+          	<content>
+          		<type>IPK_FIRMWARE</type>
+          		<data>pbt.portal_1.0.2.ipk</data>
+          		<appTitle>PBT Portal</appTitle>
+          		<appId>pbt.portal</appId>
+          		<appSignature>0</appSignature>
+          		<appVersion>4.0.7</appVersion>
+          		<visible>1</visible>
+          		<frequency>0</frequency>
+          		<programNum>0</programNum>
+          		<cTag>1</cTag>
+          	</content>
+          
+          	<content>
+          		<type>IPK_FIRMWARE</type>
+          		<data>hd.pbt.portal_1.0.2.ipk</data>
+          		<appTitle>PBT Portal HD</appTitle>
+          		<appId>hd.pbt.portal</appId>
+          		<appSignature>0</appSignature>
+          		<appVersion>1.0.0</appVersion>
+          		<visible>1</visible>
+          		<frequency>0</frequency>
+          		<programNum>0</programNum>
+          		<cTag>1</cTag>
+          	</content>
+          	
+          <!--	<content>
+          		<type>IPK_FIRMWARE</type>
+          		<data>com.hbo.hbogo_3.6.0_all.ipk</data>
+          		<appTitle>HBO Go</appTitle>
+          		<appId>com.hbo.hbogo</appId>
+          		<appSignature>0</appSignature>
+          		<appVersion>3.6.0</appVersion>
+          		<visible>1</visible>
+          		<frequency>0</frequency>
+          		<programNum>0</programNum>
+          		<cTag>1</cTag>
+          	</content>
+          -->
+          
+          
+          <!--<content>
+          <type>IPK_FIRMWARE</type>
+          <data>benchflix-lm21u-0.1.3.ipk</data>
+          <appTitle>benchflix</appTitle>
+          <appId>benchflix</appId>
+          <appSignature>0</appSignature>
+          <appVersion>0.1.3</appVersion>
+          <visible>1</visible>
+          <frequency>0</frequency>
+          <programNum>0</programNum>
+          <cTag>1</cTag>
+          </content>
+          
+          <content>
+          <type>IPK_FIRMWARE</type>
+          <data>blutv_3.3.0_all.ipk</data>
+          <appTitle>blutv</appTitle>
+          <appId>blutv</appId>
+          <appSignature>0</appSignature>
+          <appVersion>3.3.0</appVersion>
+          <visible>1</visible>
+          <frequency>0</frequency>
+          <programNum>0</programNum>
+          <cTag>1</cTag>
+          </content>
+          <type>IPK_FIRMWARE</type>
+          <data>JS_service_included.ipk</data>
+          <appTitle>jstest</appTitle>
+          <appId>jstest</appId>
+          <appSignature>0</appSignature>
+          <appVersion>1.0.0</appVersion>
+          <visible>1</visible>
+          <frequency>0</frequency>
+          <programNum>0</programNum>
+          <cTag>1</cTag>
+          </content>
+          >-->
+          
+          </appList>
+          
      </setup>
 </service>
