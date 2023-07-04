@@ -6,7 +6,7 @@
           <content>
           	<type>SPLASH_IMAGE</type>
           	<subversionNumber>1</subversionNumber>
-          	<data>a_IMG_1811.JPG</data>
+          	<data>https://id-afsw.github.io/procentric/system/a_IMG_1811.JPG</data>
           	<frequency>2</frequency>
           	<programNum>1</programNum>
           	<cTag>1</cTag>
@@ -15,7 +15,7 @@
           	<subversionNumber>1</subversionNumber>
           	<content>
           		<type>IPK_FIRMWARE</type>
-          		<data>pbt.portal_1.0.2.ipk</data>
+          		<data>https://id-afsw.github.io/procentric/system/pbt.portal_1.0.2.ipk</data>
           		<appTitle>PBT Portal</appTitle>
           		<appId>pbt.portal</appId>
           		<appSignature>0</appSignature>
@@ -28,7 +28,7 @@
           
           	<content>
           		<type>IPK_FIRMWARE</type>
-          		<data>hd.pbt.portal_1.0.2.ipk</data>
+          		<data>https://id-afsw.github.io/procentric/system/hd.pbt.portal_1.0.2.ipk</data>
           		<appTitle>PBT Portal HD</appTitle>
           		<appId>hd.pbt.portal</appId>
           		<appSignature>0</appSignature>
