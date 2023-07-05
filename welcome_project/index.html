@@ -1,0 +1,145 @@
+<html lang="en">
+<head>
+  <title>Test App</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/lib/hcap.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/key.js"></script>
+  
+</head>
+<body onload="init()">
+  <div id="Container" style="display:flex; flex-direction:column; align-items:center;">
+    <div class="text-center">
+      <img style="width:50vw; margin-top:7.5rem" src="./asset/images/procentric_new_logo.png"/>
+    </div>
+    <div class="container" style="margin:2.5rem;">
+      <div class="card card-body" style="margin:2rem; background-color:rgba(153,153,153,0.7)">
+        <ul class="nav" style="justify-content:space-between; margin: 10 30 10 30">
+          <li class="nav-item">
+            <a id="f0" class="nav-link" aria-current="page" href="pages/information.html">
+              <div style="display:flex; flex-direction:column; text-align:center;">
+                <i class="fas fa-5x fa-info"> </i>information
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a id="f1" class="nav-link" href="pages/application.html"> 
+              <div style="display:flex; flex-direction:column; text-align:center;">
+                <i class="fas fa-5x fa-rocket"> </i>application
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a id="f2" class="nav-link" href="pages/media.html">
+              <div style="display:flex; flex-direction:column; text-align:center;">
+                <i class="fas fa-5x fa-video"> </i>media
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a id="f3" class="nav-link" href="pages/channel.html">
+              <div style="display:flex; flex-direction:column; text-align:center;">
+                <i class="fas fa-5x fa-tv"> </i>channel
+              </div>  
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div id="logContainer" class="footer">
+    <h2>Log Area</h2>
+    <div>
+      <p id="log_area">
+        
+      </p>
+    </div>
+  </div> -->
+</body>
+<script type="text/javascript">
+  let idx = 0;
+  const MAX_LENGTH=4;
+  
+
+  function init(){
+    run();
+    set_key_attribute_1();
+  }
+
+  document.addEventListener("keydown", onKeyDown, true);
+  document.getElementById(`f${idx}`).focus();
+
+  function onKeyDown(event) {
+    console.log("event.keyCode: "+event.keyCode);
+    switch (event.keyCode) {
+      case hcap.key.Code.UP:
+        document.getElementById(`f${idx}`).blur();
+        document.getElementById(`f${idx}`).focus();
+        break;
+      case hcap.key.Code.DOWN:
+        document.getElementById(`f${idx}`).blur();
+        document.getElementById(`f${idx}`).focus();
+        break;
+      case hcap.key.Code.LEFT:
+        document.getElementById(`f${idx}`).blur();
+        idx>0?idx--:null;
+        document.getElementById(`f${idx}`).focus();
+        break;
+      case hcap.key.Code.RIGHT:
+        document.getElementById(`f${idx}`).blur();
+        idx<MAX_LENGTH?idx++:null;
+        document.getElementById(`f${idx}`).focus();
+        break;
+      case hcap.key.Code.ENTER:
+        document.getElementById(`f${idx}`).click();
+        break;
+      case hcap.key.Code.BACK:
+        document.getElementById(`f${idx}`).blur();
+        break;
+      case hcap.key.Code.PORTAL:
+        window.location.reload(true);
+        break;
+      default:
+        break
+    }
+    console.log(idx);
+  }
+  
+  function set_key_attribute_1(){
+    const keys =[
+      hcap.key.Code.UP,
+      hcap.key.Code.DOWN,
+      hcap.key.Code.LEFT,
+      hcap.key.Code.RIGHT,
+      hcap.key.Code.ENTER,
+      hcap.key.Code.BACK,
+      hcap.key.Code.PORTAL,
+      hcap.key.Code.INFO,
+      hcap.key.Code.BLUE
+    ]
+    keys.forEach((vkey)=>{
+      console.log(vkey);
+      hcap.key.addKeyItem({
+        "keycode" : 0,
+        "virtualKeycode" : vkey,
+        "attribute" : 2,
+        "onSuccess" : function() {
+          // mylog("onSuccess for addKeyItem(vkey:" + vkey + ")");
+        },
+        "onFailure" : function(f) {
+          //  mylog("onFailure : errorMessage = " + f.errorMessage);
+        }
+      })
+    })
+  }
+
+
+</script>
+</html>
