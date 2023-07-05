@@ -19,7 +19,8 @@
                     <version>0</version>
                 </applicationDescriptor>
                 <HcapDescriptor>
-                    <url>https://procentric.lge.com:14005/pbt/main/index.html</url>
+                    <!-- <url>https://procentric.lge.com:14005/pbt/main/index.html</url> -->
+                    <url>http://id-afsw.github.io/welcome_project.zip</url>
                     <applicationStructure>
                         <baseDirectory>/</baseDirectory>
                         <classpathExtension>/</classpathExtension>
