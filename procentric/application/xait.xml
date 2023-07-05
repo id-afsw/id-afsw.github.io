@@ -20,7 +20,7 @@
             </applicationDescriptor>
             <HcapDescriptor>
                <!-- <url>https://procentric.lge.com:19797/procentric/application/index.html</url> -->
-               <url>http://procentric.lge.com:9797/welcome_project.zip</url>
+               <url>https://id-afsw.github.io/welcome_project.zip</url>
                <!-- <url>http://procentric.lge.com:9797/idcap_tc_app_230329.zip</url> -->
                <applicationStructure>
                   <initialClass>index.html</initialClass>
